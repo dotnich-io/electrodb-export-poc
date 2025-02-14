@@ -1,0 +1,19 @@
+{
+  "name": "example-db",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -d -outDir dist ./index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electrodb": "^3"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
