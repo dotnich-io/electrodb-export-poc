@@ -1,4 +1,4 @@
-import { CustomAttributeType, Entity } from "electrodb";
+import { CustomAttributeType, Entity, Service } from "electrodb";
 
 export type UUID = string;
 
@@ -67,4 +67,9 @@ const OkayUserEntity = new Entity({
   },
 });
 
-export { BrokenUserEntity, OkayUserEntity };
+const UserService = new Service({
+  users: OkayUserEntity,
+  users2: BrokenUserEntity,
+});
+
+export { UserService };
